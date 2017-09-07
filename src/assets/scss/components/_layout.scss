@@ -1,0 +1,63 @@
+/*  -------------------------------------------------------------
+    DcK Area
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Project:        DcK Area
+    Author:         Dereckson
+    Dependencies:   foundation motion-ui
+    Filename:       app.css
+    Licence:        CC-BY 4.0, MIT
+    -------------------------------------------------------------    */
+
+/*  -------------------------------------------------------------
+    Table of contents
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ::  Grid
+    ::  Header
+    ::  Content
+    ::  Headings
+
+*/
+
+/*  -------------------------------------------------------------
+    Grid
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -    */
+
+.area {
+  @include xy-grid-container;
+}
+
+/*  -------------------------------------------------------------
+    Header
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -    */
+
+header {
+  // Grid
+
+  @include xy-grid;
+  @include xy-gutters($negative: true, $gutter-position: left right);
+
+  .username {
+    @include xy-cell(shrink);
+  }
+
+  .fullname {
+    @include xy-cell(auto);
+  }
+
+  // Margins
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  // Styles
+
+  .username {
+      padding-bottom: 1rem;
+      border-bottom: solid black 2rem;
+   }
+
+  .fullname {
+      text-align: right;
+  }
+}

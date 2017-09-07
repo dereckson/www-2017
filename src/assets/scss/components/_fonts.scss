@@ -1,0 +1,42 @@
+/*  -------------------------------------------------------------
+    DcK Area
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Project:        DcK Area
+    Author:         Dereckson
+    Dependencies:   foundation motion-ui
+    Filename:       app.css
+    Licence:        CC-BY 4.0, MIT
+    -------------------------------------------------------------    */
+
+/*  -------------------------------------------------------------
+    Table of contents
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ::  Fonts to import
+    ::  Header
+
+*/
+
+$fancy-header-font: 'oswald_stencilbold';
+
+
+/*  -------------------------------------------------------------
+    Fonts to import
+
+    :: Oswald
+    :: Oswald Stencil
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -    */
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:200);
+@import url(https://assets.dereckson.be/fonts/oswald-stencil/font.css);
+
+
+/*  -------------------------------------------------------------
+    Header
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -    */
+
+header {
+  h1, .fullname {
+    font-family: $fancy-header-font, $header-font-family;
+  }
+}
